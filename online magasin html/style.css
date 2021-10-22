@@ -1,0 +1,198 @@
+/* Basic CSS Reset */
+::after,
+::before{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+
+/*Min kode begynder her*/ 
+body {
+    background: rgb(185,216,150);
+    background: linear-gradient( 0deg, rgba(185,216,150,1) 40%, rgba(255,255,255,1) 65%);
+    font-family: Arial, Helvetica, sans-serif;
+    max-width: 1680px;
+    height: 1200px; 
+    margin: 0 auto;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:16px;
+	word-wrap:break-word !important;
+	font-family: Arial, Helvetica, sans-serif;
+/* 	text-align: left; */
+	
+  }
+
+  /*styling af main boksen*/
+  .wrapper_main {
+    width: 900px;
+    height: 600px;
+    margin: 0 auto;
+	background-color: #e6e7e4;  
+  }
+
+  #wrapper_main{
+	overflow: scroll;
+  }
+
+  .artikler {
+	  color: black;
+	  padding-left: 40px;
+	  padding-right: 40px;
+	  line-height: 1,1rem;
+	  font-family: Arial, Helvetica, sans-serif;
+	  text-align: left;
+	  display: block;
+	  text-decoration: none;
+  }
+    
+    /* logo */
+    .logo{
+    display: block;
+    margin-left: auto;
+    margin-right: auto; 
+    text-align: center;
+    padding-top: 60px;
+    }
+  
+	/*styling artikler*/
+.fyldtxt{
+	text-align: left;  
+	margin: 0;
+	padding-right: 40px;
+	}
+
+.overskrift{
+color: black;
+text-align: center;
+}
+
+#overskrift{
+	text-align: center;
+}
+
+.videotemplate{
+	padding: 10px;
+	padding-top: 60px;
+	padding-left: 40px;
+}
+
+#billede{
+	text-align: center;
+}
+
+.nedbrydning{
+	text-align: center;
+}
+
+/*Styling af link i artikler*/
+.link{
+	text-decoration:none;
+	color: black;
+}
+/* Styling af kolonner i artikler*/
+.column {
+	float: left;
+	width: 50%;
+  }
+
+  .row:after {
+	content: "";
+	display: table;
+	clear: both;
+  }
+
+/*drop down menu*/
+
+#dropdown_menu
+h3 {
+	font-size: 30px;
+	text-align: center;
+	color: #FFF;
+}
+
+h3 a {
+	color: #FFF;
+}
+
+a {
+	color: #FFF;
+}
+
+#dropdown_menu h1 {
+	text-align:center;
+	font-size:30px;
+	font-family: Arial, Helvetica, sans-serif;
+	}
+
+#dropdown_menu {
+	margin: 0 auto;
+    height: 600px;
+	width: 900px;
+
+}
+
+
+nav {
+	margin: 50px 0;
+	background-color: #a6c386;
+	text-align: left;
+}
+
+nav ul {
+	padding: 0;
+  	margin: 0;
+	list-style: none;
+	position: relative;
+	}
+	
+nav ul li {
+	display:inline-block;
+	background-color: #a6c386;
+	}
+
+nav a {
+	display:block;
+	padding:0 10px;	
+	color:#FFF;
+	font-size:20px;
+	line-height: 60px;
+	text-decoration:none;
+}
+
+nav a:hover { 
+	background-color: #b9d896; 
+}
+
+/* Hide Dropdowns by Default */
+nav ul ul {
+	display: none;
+	position: absolute; 
+	top: 60px; /* the height of the main nav */
+}
+	
+/* Display Dropdowns on Hover */
+nav ul li:hover > ul {
+	display:inherit;
+}
+	
+/* First Tier Dropdown */
+nav ul ul li {
+	width:300px;
+	float:none;
+	display:list-item;
+	position: relative;
+}
+
+/* Second, Third and more Tiers	*/
+nav ul ul ul li {
+	position: relative;
+	top:-60px; 
+	left:170px;
+}
+
+
+/* Change this in order to change the Dropdown symbol */
+li > a:after { content:  ' +'; }
+li > a:only-child:after { content: ''; } 
